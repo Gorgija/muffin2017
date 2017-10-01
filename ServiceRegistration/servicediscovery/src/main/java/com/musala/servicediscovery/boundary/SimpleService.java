@@ -16,12 +16,12 @@ public class SimpleService {
     
     @PostConstruct
     public void init() {
-        
+        // Register this service on etcd service registrant 
     }
     
     @PreDestroy
     public void close() {
-        
+        // UnRegister this service on etcd service registrant 
     }
     
     @GET
