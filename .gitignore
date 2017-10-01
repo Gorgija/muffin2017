@@ -1,2 +1,3 @@
 /ServiceRegistration/servicediscovery/target/
 /APIGateway/nbproject/private/
+/CircuitBreaker/circuitbreakerexample/target/
