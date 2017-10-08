@@ -1,5 +1,9 @@
 version: '2'
 services:
+    etcd:
+      image: "elcolio/etcd"
+      ports:
+        - "4002:4001"
     apigate:
       build: ../APIGateway/.
       ports:
@@ -16,7 +20,7 @@ services:
       build: ./servicethree/.
       ports:
         - "7000:7000"
-    selfregistrant:
+    registrant:
       build: ./servicetoregister/.
       ports:
         - "8000:8000" 

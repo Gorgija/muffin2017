@@ -11,7 +11,7 @@ const Hapi = require('hapi');
 
 const server = new Hapi.Server();
 
-server.connection({ port: port, host: 'localhost' });
+server.connection({ port: port });
 
 server.route({
     method: 'GET',
@@ -25,10 +25,10 @@ server.route({
 server.start((err) => {
     if (err) { throw err;}
     else {
-	// Service Registration proccess...
-	etcd.set(p,JSON.stringify({hostname: '127.0.0.1',port: 8000,pid: process.pid }));
-    	console.log(`Service is registered as ${p} and Server running at: ${server.info.uri}`);
-	registered = true;
+        // Service Registration proccess...
+        etcd.set(p,JSON.stringify({hostname: '127.0.0.1',port: 8000,pid: process.pid }));
+        console.log(`Service is registered as ${p} and Server running at: ${server.info.uri}`);
+        registered = true;
     }
 });
 

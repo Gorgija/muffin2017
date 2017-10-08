@@ -1,10 +1,10 @@
 const http = require('http');
-const path = require('path');
-const Etcd = require('node-etcd');
+// const path = require('path');
+// const Etcd = require('node-etcd');
 
-var etcd = new Etcd('http://127.0.0.1:4001');
-var p = path.join('/','services','skopje')
-var registered = false;
+// var etcd = new Etcd('http://127.0.0.1:4001');
+// var p = path.join('/','services','skopje')
+// var registered = false;
 
 const app = http.createServer((req,res) => {
 
