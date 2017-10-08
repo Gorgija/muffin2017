@@ -1,0 +1,5 @@
+1. Separate Commands and Queries in API Gateway service
+2. Make Cache docker image and start it
+3. Make Database docker container and start it
+4. Point Query requests to cache
+5. Point Command/POSt Request to Database.
