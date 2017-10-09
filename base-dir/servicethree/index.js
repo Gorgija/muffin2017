@@ -8,7 +8,7 @@ const http = require('http');
 
 const app = http.createServer((req,res) => {
 
-		res.end("Time in miliseconds from service two: " + Date.now());
+		res.end("Sofija time: " + Date.now());
 		
 });
 

@@ -3,11 +3,15 @@ services:
     etcd:
       image: "elcolio/etcd"
       ports:
-        - "4002:4001"
+        - "2379:2379"
     apigate:
-      build: ../APIGateway/.
+      build: ./APIGateway/.
       ports:
         - "3000:3000"
+    circuitbreaker:
+      build: ./CircuitBreaker/.
+      ports:
+        - "4000:4000"
     ones:
       build: ./serviceone/.
       ports:
@@ -21,7 +25,7 @@ services:
       ports:
         - "7000:7000"
     registrant:
-      build: ./servicetoregister/.
+      build: ./ServiceRegistration/.
       ports:
         - "8000:8000" 
     redis:

@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js" 
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.1",
+    "concurrently": "^3.5.0",
+    "express": "^4.16.1",
+    "got": "^7.1.0",
     "node-etcd": "^5.1.0"
   }
 }
