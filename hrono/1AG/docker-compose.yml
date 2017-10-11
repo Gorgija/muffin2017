@@ -1,0 +1,20 @@
+version: '2'
+services:
+    apigate:
+      build: ./APIGateway/.
+      ports:
+        - "3000:3000"
+    ones:
+      build: ./serviceone/.
+      ports:
+        - "5000:5000"
+    twos:
+      build: ./servicetwo/.
+      ports:
+        - "6000:6000"
+    threes:
+      build: ./servicethree/.
+      ports:
+        - "7000:7000"
+    redis:
+      image: "redis:alpine"

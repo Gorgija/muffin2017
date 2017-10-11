@@ -5,8 +5,14 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 Flask	../base-dir/serviceone/app.py	/^from flask import Flask$/;"	kind:namespace	line:1
+Flask	../hrono/1AG/serviceone/app.py	/^from flask import Flask$/;"	kind:namespace	line:1
 Redis	../base-dir/serviceone/app.py	/^from redis import Redis$/;"	kind:namespace	line:2
+Redis	../hrono/1AG/serviceone/app.py	/^from redis import Redis$/;"	kind:namespace	line:2
 app	../base-dir/serviceone/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
+app	../hrono/1AG/serviceone/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
 app.py	../base-dir/serviceone/app.py	1;"	kind:file	line:1
+app.py	../hrono/1AG/serviceone/app.py	1;"	kind:file	line:1
 hello	../base-dir/serviceone/app.py	/^def hello():$/;"	kind:function	line:8
+hello	../hrono/1AG/serviceone/app.py	/^def hello():$/;"	kind:function	line:8
 redis	../base-dir/serviceone/app.py	/^redis = Redis(host="redis", port=6379)$/;"	kind:variable	line:5
+redis	../hrono/1AG/serviceone/app.py	/^redis = Redis(host="redis", port=6379)$/;"	kind:variable	line:5
