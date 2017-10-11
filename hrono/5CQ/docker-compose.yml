@@ -1,0 +1,32 @@
+version: '2'
+services:
+    etcd:
+      image: "elcolio/etcd"
+      ports:
+        - "2379:2379"
+    apigate:
+      build: ./APIGateway/.
+      ports:
+        - "3000:3000"
+    circuitbreaker:
+      build: ./CircuitBreaker/.
+      ports:
+        - "4000:4000"
+    ones:
+      build: ./serviceone/.
+      ports:
+        - "5000:5000"
+    twos:
+      build: ./servicetwo/.
+      ports:
+        - "6000:6000"
+    threes:
+      build: ./servicethree/.
+      ports:
+        - "7000:7000"
+    registrant:
+      build: ./ServiceRegistration/.
+      ports:
+        - "8000:8000" 
+    redis:
+      image: "redis:alpine"
