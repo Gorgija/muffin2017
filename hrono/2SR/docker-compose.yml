@@ -1,5 +1,9 @@
 version: '2'
 services:
+    etcd:
+      image: "elcolio/etcd"
+      ports:
+        - "2379:2379"
     apigate:
       build: ./APIGateway/.
       ports:
@@ -16,5 +20,9 @@ services:
       build: ./servicethree/.
       ports:
         - "7000:7000"
+    registrant:
+      build: ./ServiceRegistration/.
+      ports:
+        - "8000:8000" 
     redis:
       image: "redis:alpine"
