@@ -4,27 +4,46 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+Client	../hrono/5CQ/serviceone/app.py	/^from etcd import Client$/;"	kind:namespace	line:3
 Flask	../base-dir/serviceone/app.py	/^from flask import Flask$/;"	kind:namespace	line:1
 Flask	../hrono/1AG/serviceone/app.py	/^from flask import Flask$/;"	kind:namespace	line:1
 Flask	../hrono/2SR/serviceone/app.py	/^from flask import Flask$/;"	kind:namespace	line:1
 Flask	../hrono/3CB/serviceone/app.py	/^from flask import Flask$/;"	kind:namespace	line:1
+Flask	../hrono/4BH/serviceone/app.py	/^from flask import Flask$/;"	kind:namespace	line:1
+Flask	../hrono/5CQ/serviceone/app.py	/^from flask import Flask$/;"	kind:namespace	line:1
 Redis	../base-dir/serviceone/app.py	/^from redis import Redis$/;"	kind:namespace	line:2
 Redis	../hrono/1AG/serviceone/app.py	/^from redis import Redis$/;"	kind:namespace	line:2
 Redis	../hrono/2SR/serviceone/app.py	/^from redis import Redis$/;"	kind:namespace	line:2
 Redis	../hrono/3CB/serviceone/app.py	/^from redis import Redis$/;"	kind:namespace	line:2
+Redis	../hrono/4BH/serviceone/app.py	/^from redis import Redis$/;"	kind:namespace	line:2
+Redis	../hrono/5CQ/serviceone/app.py	/^from redis import Redis$/;"	kind:namespace	line:2
 app	../base-dir/serviceone/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
 app	../hrono/1AG/serviceone/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
 app	../hrono/2SR/serviceone/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
 app	../hrono/3CB/serviceone/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
+app	../hrono/4BH/serviceone/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
+app	../hrono/5CQ/serviceone/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:8
 app.py	../base-dir/serviceone/app.py	1;"	kind:file	line:1
 app.py	../hrono/1AG/serviceone/app.py	1;"	kind:file	line:1
 app.py	../hrono/2SR/serviceone/app.py	1;"	kind:file	line:1
 app.py	../hrono/3CB/serviceone/app.py	1;"	kind:file	line:1
+app.py	../hrono/4BH/serviceone/app.py	1;"	kind:file	line:1
+app.py	../hrono/5CQ/serviceone/app.py	1;"	kind:file	line:1
+click	../hrono/5CQ/serviceone/app.py	/^def click():$/;"	kind:function	line:20
+clicknums	../hrono/5CQ/serviceone/app.py	/^def clicknums():$/;"	kind:function	line:14
+client	../hrono/5CQ/serviceone/app.py	/^client = Client(host="5cq_etcd_1",port=2379)$/;"	kind:variable	line:10
 hello	../base-dir/serviceone/app.py	/^def hello():$/;"	kind:function	line:8
 hello	../hrono/1AG/serviceone/app.py	/^def hello():$/;"	kind:function	line:8
 hello	../hrono/2SR/serviceone/app.py	/^def hello():$/;"	kind:function	line:8
 hello	../hrono/3CB/serviceone/app.py	/^def hello():$/;"	kind:function	line:8
+hello	../hrono/4BH/serviceone/app.py	/^def hello():$/;"	kind:function	line:8
+json	../hrono/5CQ/serviceone/app.py	/^import json$/;"	kind:namespace	line:5
+os	../hrono/5CQ/serviceone/app.py	/^import os$/;"	kind:namespace	line:6
 redis	../base-dir/serviceone/app.py	/^redis = Redis(host="redis", port=6379)$/;"	kind:variable	line:5
 redis	../hrono/1AG/serviceone/app.py	/^redis = Redis(host="redis", port=6379)$/;"	kind:variable	line:5
 redis	../hrono/2SR/serviceone/app.py	/^redis = Redis(host="redis", port=6379)$/;"	kind:variable	line:5
 redis	../hrono/3CB/serviceone/app.py	/^redis = Redis(host="redis", port=6379)$/;"	kind:variable	line:5
+redis	../hrono/4BH/serviceone/app.py	/^redis = Redis(host="redis", port=6379)$/;"	kind:variable	line:5
+redis	../hrono/5CQ/serviceone/app.py	/^redis = Redis(host="redis", port=6379)$/;"	kind:variable	line:9
+socket	../hrono/5CQ/serviceone/app.py	/^import socket$/;"	kind:namespace	line:4
+storeclick	../hrono/5CQ/serviceone/app.py	/^def storeclick():$/;"	kind:function	line:24

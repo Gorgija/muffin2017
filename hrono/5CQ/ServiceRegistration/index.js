@@ -13,6 +13,7 @@ const p = path.join('/',SERVICE_DIR, SERVICE_NAME);
 var registered = false;
 var port = process.env.PORT || 8000;
 
+// ***************************************  II PART ******************************************
 http.createServer((req, res) => {
     res.end('Im here...');
 }).listen(8000, () => {
@@ -39,4 +40,4 @@ process.on('exit', exitHandler);
 process.on('SIGINT', exitHandler);
 process.on('SIGTERM', exitHandler);
 process.on('uncaughtException', exitHandler);
-
+// ***************************************  II PART ******************************************

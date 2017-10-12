@@ -5,6 +5,7 @@ const Etcd = require('node-etcd');
 const etcd = new Etcd('http://5cq_etcd_1:2379');
 const disyuntor = require('disyuntor');
 
+// *********************************************************************  II PART ************
 const safeGot = disyuntor.promise(got, {
     name: 'got.request',
     timeout: '10s',
@@ -32,3 +33,4 @@ app.get('/:service/:id', (req, res, next) => {
 });
 
 app.listen(4000, () => { console.log('CircuitBreaker Server is started and listening on port 4000'); });
+// *********************************************************************

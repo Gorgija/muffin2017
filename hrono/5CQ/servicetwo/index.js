@@ -10,9 +10,15 @@ const SERVICE_DIR = "services";
 const SERVICE_NAME = "skopje";
 const p = path.join('/', SERVICE_DIR, SERVICE_NAME);
 
+
+// ****************************************
 app.get('/', (req, res, next) => {
 	res.end("Skopje time: " + Date.now());
 });
+// ****************************************
+
+
+// *******************************  III PART  *********************************
 app.get('/:block', (req, res, next) => {
 	var param = req.params.block;
 	if (param === '0') {
@@ -26,6 +32,8 @@ app.get('/:block', (req, res, next) => {
 		while (waitTill > new Date()) { }
 	}
 });
+// *******************************  III PART  *********************************
+
 app.listen(6000, () => {
 	etcd.set(p, JSON.stringify({ host: ip.address(), port: port, pid: process.pid }), {}, (err) => {
 		if (!err) {
