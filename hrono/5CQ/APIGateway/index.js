@@ -9,7 +9,7 @@ const app = express();
 const etcd = new Etcd('http://5cq_etcd_1:2379');
 
 
-//  I PART 
+//  I PART ee
 // API GATEWAY DESIGN PATTERN *************************************************
 app.get('/skopje/:time', (request, response, next) => { 
     http.get('http://5cq_twos_1:6000', (res) => {
